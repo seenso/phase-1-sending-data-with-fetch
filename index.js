@@ -19,10 +19,10 @@ const submitData = (userName, userEmail) => {
 
     //append id to DOM
     document.body.append(data.id);
-    // let id = data.id;
-
   })
   //TEST 3 - Handle Errors
-  .catch((err) => {console.log("ERROR MESSAGE:", err.message)});
+  .catch((err) => {
+    document.body.append(err.message);
+  });
 };
 
